@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    min-height: 100vh;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* Navbar Css */
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 28px;
+    background: linear-gradient(45deg, #ff6b6b, #4e54c8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -0.5px;
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.login-btn {
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 24px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 30px;
+    background: #333;
+    border: none;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn:hover {
+    background: #ff6b6b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 107, 107, 0.3);
+}
+
+.login-btn.register-nav {
+    background: #4e54c8;
+}
+
+.login-btn.register-nav:hover {
+    background: #3f449e;
+    box-shadow: 0 6px 12px rgba(78, 84, 200, 0.3);
+}
+
+/* hero section */
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.slogan {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #2b2b2b;
+}
+
+.slogan span {
+    color: #ff6b6b;
+    position: relative;
+}
+
+.slogan span::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 107, 107, 0.2);
+    z-index: -1;
+    transform: skewX(-15deg);
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+.sign-body a {
+    text-decoration: none;
+}
+
+.signup-btn {
+    color: white;
+    cursor: pointer;
+    padding: 14px 32px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #4e54c8, #8f94fb);
+    border: none;
+    box-shadow: 0 10px 20px rgba(78, 84, 200, 0.3);
+    transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 15px 25px rgba(78, 84, 200, 0.4);
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+}
+
+.image img:hover {
+    transform: translateY(-10px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-description {
+        margin: 0 auto;
+    }
+
+    .slogan {
+        font-size: 36px;
+    }
+
+    .navbar-container {
+        padding: 15px 20px;
+    }
+}

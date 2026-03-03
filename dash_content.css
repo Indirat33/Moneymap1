@@ -1,0 +1,89 @@
+* {
+    font-family: "Itim";
+    font-size: 16px;
+}
+.Balance_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.transaction_container {
+    gap: 1cm;
+    display: flex;
+}
+
+.user_transactions {
+    width: 700px;
+}
+
+.transaction-btn {
+    font-size: 18px;
+    display: flex;
+    gap: 500px;
+    align-items: center;
+}
+.atb {
+    font-size: 16px;
+    height: 1cm;
+    color: white;
+    width: 3cm;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+}
+
+.transaction-details{
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.transaction-rows{
+    display:flex; 
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+.Ex_ByCategory {
+    display: flex;
+    flex-direction: column;
+}
+.categorysummary{
+    width: 500px;
+    padding: 0 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.sumOfCategory {
+    display: flex;
+    flex-direction: column;
+}
+.Category_total{
+    color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.totalCategory{
+    display: flex;
+    justify-content: space-between;
+}
+.Ex_form{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 10px 10px;
+    width: 220px;
+    height: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.expenseData{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.income-btn{
+    background-color: green;
+    
+}

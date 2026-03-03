@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.register-container {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    color: #2b2b2b;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: -5px;
+}
+
+input,
+select {
+    padding: 12px 15px;
+    border: 1.5px solid #e1e1e1;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background: #fafafa;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #4e54c8;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(78, 84, 200, 0.1);
+}
+
+button {
+    margin-top: 10px;
+    padding: 14px;
+    background: linear-gradient(45deg, #4e54c8, #8f94fb);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(78, 84, 200, 0.3);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(78, 84, 200, 0.4);
+}
+
+.error-box {
+    background: rgba(255, 107, 107, 0.1);
+    color: #ff4757;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    border: 1px solid rgba(255, 107, 107, 0.2);
+    text-align: left;
+}
+
+.error-box p {
+    margin: 5px 0;
+}
+
+p {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+
+p a {
+    color: #4e54c8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
